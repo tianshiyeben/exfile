@@ -17,3 +17,5 @@ pip install MySQL-python
 5、执行：python exfile.py
 ----------------------------------- 
 
+
+tianshiyeben@qq.com
