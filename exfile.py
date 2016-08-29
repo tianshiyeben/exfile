@@ -12,7 +12,7 @@ import sys,time, os, sched,platform
 def export():
     nowdate = time.strftime('%Y-%m-%d', time.localtime(time.time()-60*60*24))
     sql = u"select id as 序号,title as 信息名称 from test  where RELEASED_DTIME like '" + nowdate + "%'"
-    conn = MySQLdb.connect(host='127.0.0.1', user='root', passwd='123', db='cicro', charset='utf8')
+    conn = MySQLdb.connect(host='127.0.0.1', user='root', passwd='123', db='test', charset='utf8')
     cursor = conn.cursor()
     count = cursor.execute(sql)
     print 'has %s record' % count
